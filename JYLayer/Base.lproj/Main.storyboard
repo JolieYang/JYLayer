@@ -310,31 +310,160 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-6d-FUR">
-                                <rect key="frame" x="111" y="72" width="98" height="99"/>
-                                <color key="backgroundColor" red="0.99620300531387329" green="0.82476526498794556" blue="0.82038497924804688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ygm-EV-6yk">
+                                <rect key="frame" x="0.0" y="358" width="320" height="96"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_white_snowman" translatesAutoresizingMaskIntoConstraints="NO" id="ypS-Jd-eQ1">
+                                        <rect key="frame" x="27" y="8" width="80" height="80"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_white_snowman" translatesAutoresizingMaskIntoConstraints="NO" id="Bu3-kQ-emg">
+                                        <rect key="frame" x="206" y="8" width="80" height="80"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.78182607889175415" green="0.77431732416152954" blue="0.99313813447952271" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ar-mw-azx">
-                                <rect key="frame" x="111" y="73" width="98" height="99"/>
-                                <color key="backgroundColor" red="0.99620300531387329" green="0.82476526498794556" blue="0.82038497924804688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szl-ca-X1S">
+                                <rect key="frame" x="10" y="244" width="78" height="30"/>
+                                <color key="backgroundColor" red="0.99936944246292114" green="0.79688125848770142" blue="0.59846866130828857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="透视投影">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAction2:" destination="HIF-bD-j4q" eventType="touchUpInside" id="aYw-YM-rNE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aec-16-A2X">
+                                <rect key="frame" x="177" y="207" width="114" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="绕Y轴旋转45度">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAction1:" destination="HIF-bD-j4q" eventType="touchUpInside" id="zcE-oN-GrP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xr4-53-Ewj">
+                                <rect key="frame" x="152" y="320" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="雪人还原">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="remakeAction:" destination="HIF-bD-j4q" eventType="touchUpInside" id="dcY-48-VFI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cL-6v-Aqy">
+                                <rect key="frame" x="20" y="456" width="158" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="设置sublayerTransform">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAction3:" destination="HIF-bD-j4q" eventType="touchUpInside" id="tqc-D8-p5D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6q-u7-IVS">
+                                <rect key="frame" x="201" y="494" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="还原">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="remakeAction2:" destination="HIF-bD-j4q" eventType="touchUpInside" id="SnI-4L-U59"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKA-st-Ixf">
+                                <rect key="frame" x="20" y="494" width="173" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="未设置sublayerTransform">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAction4:" destination="HIF-bD-j4q" eventType="touchUpInside" id="7hA-LN-Gvk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l60-Rr-SSI">
+                                <rect key="frame" x="96" y="320" width="48" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="背面">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAction5:" destination="HIF-bD-j4q" eventType="touchUpInside" id="NZ4-wD-YWY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agL-rh-JhJ">
+                                <rect key="frame" x="13" y="320" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="不绘制背面">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAction6:" destination="HIF-bD-j4q" eventType="touchUpInside" id="GlM-91-F5x"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mue-oa-ivX">
+                                <rect key="frame" x="177" y="72" width="133" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_white_snowman" translatesAutoresizingMaskIntoConstraints="NO" id="ymQ-mG-Lej">
+                                        <rect key="frame" x="16" y="14" width="100" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_snowman" translatesAutoresizingMaskIntoConstraints="NO" id="ymQ-mG-Lej">
-                                <rect key="frame" x="46" y="294" width="100" height="100"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_snowman" translatesAutoresizingMaskIntoConstraints="NO" id="n4l-AK-yp1">
-                                <rect key="frame" x="200" y="294" width="100" height="100"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_snowman" translatesAutoresizingMaskIntoConstraints="NO" id="944-wX-Gsf">
-                                <rect key="frame" x="107" y="180" width="100" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qr-Jk-0x3">
+                                <rect key="frame" x="181" y="282" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="绕Z轴旋45度">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAction7:" destination="HIF-bD-j4q" eventType="touchUpInside" id="CA8-vT-cO1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kid-WE-91d">
+                                <rect key="frame" x="13" y="282" width="149" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="底图绕Z轴反向旋45度">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAction8:" destination="HIF-bD-j4q" eventType="touchUpInside" id="dqq-c4-7Uf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SA9-QE-ycJ">
+                                <rect key="frame" x="220" y="320" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="雪人底图还原">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="remakeAction1:" destination="HIF-bD-j4q" eventType="touchUpInside" id="JwE-2d-qxx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIf-KW-dIh">
+                                <rect key="frame" x="13" y="207" width="149" height="30"/>
+                                <color key="backgroundColor" red="0.99936944250000004" green="0.79688125850000002" blue="0.59846866129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="底图绕Y轴逆旋转45度">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAction9:" destination="HIF-bD-j4q" eventType="touchUpInside" id="Bqo-16-5r1"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red_white_snowman" translatesAutoresizingMaskIntoConstraints="NO" id="wrV-Ie-f1S">
+                                <rect key="frame" x="37" y="86" width="100" height="100"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.74202448129653931" green="0.74259525537490845" blue="0.74211281538009644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="bgView" destination="Mue-oa-ivX" id="p0b-24-anh"/>
+                        <outlet property="containerView" destination="Ygm-EV-6yk" id="9bL-n1-Xkf"/>
                         <outlet property="layerImageView" destination="ymQ-mG-Lej" id="Kux-yy-zNF"/>
-                        <outlet property="layerImageView2" destination="n4l-AK-yp1" id="TEK-Uy-37f"/>
-                        <outlet property="layerPinkView" destination="8ar-mw-azx" id="ITF-0h-2LJ"/>
+                        <outlet property="snowImage1" destination="ypS-Jd-eQ1" id="tmu-7t-iyl"/>
+                        <outlet property="snowImage2" destination="Bu3-kQ-emg" id="ovo-zG-cOg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUO-bw-lyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -404,7 +533,7 @@
         <image name="chris_tree" width="128" height="128"/>
         <image name="geometry_icon" width="38" height="32"/>
         <image name="picture_icon" width="32" height="32"/>
-        <image name="red_snowman" width="350" height="350"/>
+        <image name="red_white_snowman" width="350" height="354"/>
         <image name="snowman" width="200" height="200"/>
         <image name="transform_icon" width="32" height="32"/>
         <image name="visiual_icon" width="32" height="32"/>
