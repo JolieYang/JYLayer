@@ -6,9 +6,9 @@
 //  Copyright © 2016年 China Industrial Bank. All rights reserved.
 //
 
-#import "LayerDelegateViewController.h"
+#import "LayerGeometryViewController.h"
 
-@interface LayerDelegateViewController ()
+@interface LayerGeometryViewController ()
 @property (weak, nonatomic) IBOutlet UIView *layerView;
 @property (nonatomic, strong) CALayer *blueLayer;
 
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation LayerDelegateViewController
+@implementation LayerGeometryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

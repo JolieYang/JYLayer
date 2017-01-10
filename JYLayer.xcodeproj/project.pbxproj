@@ -12,10 +12,14 @@
 		A008E70B1DFFC43D00B6F6D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A008E7091DFFC43D00B6F6D6 /* Main.storyboard */; };
 		A008E70D1DFFC43D00B6F6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A008E70C1DFFC43D00B6F6D6 /* Assets.xcassets */; };
 		A008E7101DFFC43D00B6F6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A008E70E1DFFC43D00B6F6D6 /* LaunchScreen.storyboard */; };
+		A03779541E2331A7009D3DE6 /* SpecializedLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779531E2331A7009D3DE6 /* SpecializedLayerViewController.m */; };
+		A03779571E233E50009D3DE6 /* CAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779561E233E50009D3DE6 /* CAShapeLayerViewController.m */; };
+		A037795A1E238154009D3DE6 /* CustomBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779591E238154009D3DE6 /* CustomBezierPathView.m */; };
+		A038F5C01E1C9CBD003CCA53 /* SolidObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A038F5BF1E1C9CBD003CCA53 /* SolidObjectsViewController.m */; };
 		A0D23AC01E13555E00BEC8AE /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ABD1E13555E00BEC8AE /* MaskViewController.m */; };
 		A0D23AC11E13555E00BEC8AE /* VisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ABF1E13555E00BEC8AE /* VisionViewController.m */; };
 		A0D23AC61E1355DA00BEC8AE /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AC51E1355DA00BEC8AE /* ContentViewController.m */; };
-		A0D23ACA1E1355FC00BEC8AE /* LayerDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AC91E1355FC00BEC8AE /* LayerDelegateViewController.m */; };
+		A0D23ACA1E1355FC00BEC8AE /* LayerGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AC91E1355FC00BEC8AE /* LayerGeometryViewController.m */; };
 		A0D23ACD1E135F2600BEC8AE /* AffinesTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ACC1E135F2600BEC8AE /* AffinesTransformViewController.m */; };
 		A0D23AD21E1375C600BEC8AE /* 3DTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AD11E1375C600BEC8AE /* 3DTransformViewController.m */; };
 /* End PBXBuildFile section */
@@ -29,14 +33,22 @@
 		A008E70C1DFFC43D00B6F6D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A008E70F1DFFC43D00B6F6D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A008E7111DFFC43D00B6F6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03779521E2331A7009D3DE6 /* SpecializedLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecializedLayerViewController.h; sourceTree = "<group>"; };
+		A03779531E2331A7009D3DE6 /* SpecializedLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecializedLayerViewController.m; sourceTree = "<group>"; };
+		A03779551E233E50009D3DE6 /* CAShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerViewController.h; sourceTree = "<group>"; };
+		A03779561E233E50009D3DE6 /* CAShapeLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerViewController.m; sourceTree = "<group>"; };
+		A03779581E238154009D3DE6 /* CustomBezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBezierPathView.h; sourceTree = "<group>"; };
+		A03779591E238154009D3DE6 /* CustomBezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBezierPathView.m; sourceTree = "<group>"; };
+		A038F5BE1E1C9CBD003CCA53 /* SolidObjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SolidObjectsViewController.h; path = "变换/SolidObjectsViewController.h"; sourceTree = "<group>"; };
+		A038F5BF1E1C9CBD003CCA53 /* SolidObjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SolidObjectsViewController.m; path = "变换/SolidObjectsViewController.m"; sourceTree = "<group>"; };
 		A0D23ABC1E13555E00BEC8AE /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaskViewController.h; path = "视觉效果/MaskViewController.h"; sourceTree = "<group>"; };
 		A0D23ABD1E13555E00BEC8AE /* MaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaskViewController.m; path = "视觉效果/MaskViewController.m"; sourceTree = "<group>"; };
 		A0D23ABE1E13555E00BEC8AE /* VisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VisionViewController.h; path = "视觉效果/VisionViewController.h"; sourceTree = "<group>"; };
 		A0D23ABF1E13555E00BEC8AE /* VisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VisionViewController.m; path = "视觉效果/VisionViewController.m"; sourceTree = "<group>"; };
 		A0D23AC41E1355DA00BEC8AE /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentViewController.h; path = "寄宿图/ContentViewController.h"; sourceTree = "<group>"; };
 		A0D23AC51E1355DA00BEC8AE /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContentViewController.m; path = "寄宿图/ContentViewController.m"; sourceTree = "<group>"; };
-		A0D23AC81E1355FC00BEC8AE /* LayerDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerDelegateViewController.h; path = "图层几何学/LayerDelegateViewController.h"; sourceTree = "<group>"; };
-		A0D23AC91E1355FC00BEC8AE /* LayerDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerDelegateViewController.m; path = "图层几何学/LayerDelegateViewController.m"; sourceTree = "<group>"; };
+		A0D23AC81E1355FC00BEC8AE /* LayerGeometryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerGeometryViewController.h; path = "图层几何学/LayerGeometryViewController.h"; sourceTree = "<group>"; };
+		A0D23AC91E1355FC00BEC8AE /* LayerGeometryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerGeometryViewController.m; path = "图层几何学/LayerGeometryViewController.m"; sourceTree = "<group>"; };
 		A0D23ACB1E135F2600BEC8AE /* AffinesTransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AffinesTransformViewController.h; path = "变换/AffinesTransformViewController.h"; sourceTree = "<group>"; };
 		A0D23ACC1E135F2600BEC8AE /* AffinesTransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AffinesTransformViewController.m; path = "变换/AffinesTransformViewController.m"; sourceTree = "<group>"; };
 		A0D23AD01E1375C600BEC8AE /* 3DTransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 3DTransformViewController.h; path = "变换/3DTransformViewController.h"; sourceTree = "<group>"; };
@@ -77,6 +89,7 @@
 				A0D23AC71E1355DF00BEC8AE /* 图层几何学 */,
 				A0D23AB81E124FC700BEC8AE /* 视觉效果 */,
 				A0D23AC21E13556B00BEC8AE /* 变换 */,
+				A03779511E232C94009D3DE6 /* 专用图层 */,
 				A008E7031DFFC43D00B6F6D6 /* AppDelegate.h */,
 				A008E7041DFFC43D00B6F6D6 /* AppDelegate.m */,
 				A008E7091DFFC43D00B6F6D6 /* Main.storyboard */,
@@ -94,6 +107,19 @@
 				A008E7011DFFC43D00B6F6D6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A03779511E232C94009D3DE6 /* 专用图层 */ = {
+			isa = PBXGroup;
+			children = (
+				A03779521E2331A7009D3DE6 /* SpecializedLayerViewController.h */,
+				A03779531E2331A7009D3DE6 /* SpecializedLayerViewController.m */,
+				A03779551E233E50009D3DE6 /* CAShapeLayerViewController.h */,
+				A03779561E233E50009D3DE6 /* CAShapeLayerViewController.m */,
+				A03779581E238154009D3DE6 /* CustomBezierPathView.h */,
+				A03779591E238154009D3DE6 /* CustomBezierPathView.m */,
+			);
+			path = "专用图层";
 			sourceTree = "<group>";
 		};
 		A0D23AB81E124FC700BEC8AE /* 视觉效果 */ = {
@@ -114,6 +140,8 @@
 				A0D23ACC1E135F2600BEC8AE /* AffinesTransformViewController.m */,
 				A0D23AD01E1375C600BEC8AE /* 3DTransformViewController.h */,
 				A0D23AD11E1375C600BEC8AE /* 3DTransformViewController.m */,
+				A038F5BE1E1C9CBD003CCA53 /* SolidObjectsViewController.h */,
+				A038F5BF1E1C9CBD003CCA53 /* SolidObjectsViewController.m */,
 			);
 			name = "变换";
 			sourceTree = "<group>";
@@ -130,8 +158,8 @@
 		A0D23AC71E1355DF00BEC8AE /* 图层几何学 */ = {
 			isa = PBXGroup;
 			children = (
-				A0D23AC81E1355FC00BEC8AE /* LayerDelegateViewController.h */,
-				A0D23AC91E1355FC00BEC8AE /* LayerDelegateViewController.m */,
+				A0D23AC81E1355FC00BEC8AE /* LayerGeometryViewController.h */,
+				A0D23AC91E1355FC00BEC8AE /* LayerGeometryViewController.m */,
 			);
 			name = "图层几何学";
 			sourceTree = "<group>";
@@ -206,9 +234,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03779541E2331A7009D3DE6 /* SpecializedLayerViewController.m in Sources */,
+				A038F5C01E1C9CBD003CCA53 /* SolidObjectsViewController.m in Sources */,
 				A0D23AD21E1375C600BEC8AE /* 3DTransformViewController.m in Sources */,
 				A0D23AC61E1355DA00BEC8AE /* ContentViewController.m in Sources */,
-				A0D23ACA1E1355FC00BEC8AE /* LayerDelegateViewController.m in Sources */,
+				A03779571E233E50009D3DE6 /* CAShapeLayerViewController.m in Sources */,
+				A037795A1E238154009D3DE6 /* CustomBezierPathView.m in Sources */,
+				A0D23ACA1E1355FC00BEC8AE /* LayerGeometryViewController.m in Sources */,
 				A0D23AC01E13555E00BEC8AE /* MaskViewController.m in Sources */,
 				A008E7051DFFC43D00B6F6D6 /* AppDelegate.m in Sources */,
 				A008E7021DFFC43D00B6F6D6 /* main.m in Sources */,

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LayerDelegateViewController : UIViewController
+@interface LayerGeometryViewController : UIViewController
 
 @end
