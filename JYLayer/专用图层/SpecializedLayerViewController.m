@@ -8,6 +8,7 @@
 
 #import "SpecializedLayerViewController.h"
 #import "CAShapeLayerViewController.h"
+#import "CATextLayerViewController.h"
 
 @interface SpecializedLayerViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -22,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.dataArray = @[@"CAShapeLayer",@"CATextLayer"];
-    self.vcArray = @[@"CAShapeLayerViewController"];
+    self.vcArray = @[@"CAShapeLayerViewController",@"CATextLayerViewController"];
 }
 
 - (void)didReceiveMemoryWarning {
