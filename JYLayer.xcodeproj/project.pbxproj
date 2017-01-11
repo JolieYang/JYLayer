@@ -17,6 +17,7 @@
 		A037795A1E238154009D3DE6 /* CustomBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779591E238154009D3DE6 /* CustomBezierPathView.m */; };
 		A037795D1E24BC47009D3DE6 /* CATextLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A037795C1E24BC47009D3DE6 /* CATextLayerViewController.m */; };
 		A03779601E24CC03009D3DE6 /* LayerLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A037795F1E24CC03009D3DE6 /* LayerLabel.m */; };
+		A03779631E25CE1A009D3DE6 /* CATransformLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779621E25CE1A009D3DE6 /* CATransformLayerViewController.m */; };
 		A038F5C01E1C9CBD003CCA53 /* SolidObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A038F5BF1E1C9CBD003CCA53 /* SolidObjectsViewController.m */; };
 		A0D23AC01E13555E00BEC8AE /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ABD1E13555E00BEC8AE /* MaskViewController.m */; };
 		A0D23AC11E13555E00BEC8AE /* VisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ABF1E13555E00BEC8AE /* VisionViewController.m */; };
@@ -45,6 +46,8 @@
 		A037795C1E24BC47009D3DE6 /* CATextLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATextLayerViewController.m; sourceTree = "<group>"; };
 		A037795E1E24CC03009D3DE6 /* LayerLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerLabel.h; sourceTree = "<group>"; };
 		A037795F1E24CC03009D3DE6 /* LayerLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerLabel.m; sourceTree = "<group>"; };
+		A03779611E25CE1A009D3DE6 /* CATransformLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransformLayerViewController.h; sourceTree = "<group>"; };
+		A03779621E25CE1A009D3DE6 /* CATransformLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransformLayerViewController.m; sourceTree = "<group>"; };
 		A038F5BE1E1C9CBD003CCA53 /* SolidObjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SolidObjectsViewController.h; path = "变换/SolidObjectsViewController.h"; sourceTree = "<group>"; };
 		A038F5BF1E1C9CBD003CCA53 /* SolidObjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SolidObjectsViewController.m; path = "变换/SolidObjectsViewController.m"; sourceTree = "<group>"; };
 		A0D23ABC1E13555E00BEC8AE /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaskViewController.h; path = "视觉效果/MaskViewController.h"; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 				A037795C1E24BC47009D3DE6 /* CATextLayerViewController.m */,
 				A037795E1E24CC03009D3DE6 /* LayerLabel.h */,
 				A037795F1E24CC03009D3DE6 /* LayerLabel.m */,
+				A03779611E25CE1A009D3DE6 /* CATransformLayerViewController.h */,
+				A03779621E25CE1A009D3DE6 /* CATransformLayerViewController.m */,
 			);
 			path = "专用图层";
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				A037795D1E24BC47009D3DE6 /* CATextLayerViewController.m in Sources */,
 				A008E7021DFFC43D00B6F6D6 /* main.m in Sources */,
 				A0D23AC11E13555E00BEC8AE /* VisionViewController.m in Sources */,
+				A03779631E25CE1A009D3DE6 /* CATransformLayerViewController.m in Sources */,
 				A0D23ACD1E135F2600BEC8AE /* AffinesTransformViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
