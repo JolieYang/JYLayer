@@ -506,6 +506,7 @@
                         <segue destination="9mq-Rx-UhW" kind="show" id="wYt-tq-BnY"/>
                         <segue destination="A9Q-kj-5wt" kind="show" id="tXr-96-ZBx"/>
                         <segue destination="Qyq-sj-G5X" kind="show" id="zZE-UN-Fr3"/>
+                        <segue destination="QKh-xB-3la" kind="show" id="OkB-x1-mgm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvY-uY-BGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -831,10 +832,10 @@
             </objects>
             <point key="canvasLocation" x="2760" y="1242"/>
         </scene>
-        <!--View Controller-->
+        <!--Replicator View Controller-->
         <scene sceneID="wCJ-8e-oFO">
             <objects>
-                <viewController id="QKh-xB-3la" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CAReplicatorViewController" id="QKh-xB-3la" customClass="CAReplicatorViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wQc-xK-Ab3"/>
                         <viewControllerLayoutGuide type="bottom" id="nrP-we-Bn8"/>
@@ -842,13 +843,50 @@
                     <view key="view" contentMode="scaleToFill" id="B33-Ij-YFi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lF4-Wr-Pze">
+                                <rect key="frame" x="110" y="72" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.99259203669999996" green="0.75415819880000001" blue="0.52986764909999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSy-rn-7aL" customClass="ReflectionView">
+                                <rect key="frame" x="110" y="191" width="100" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="6Cf-yU-92S">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90746539829999995" green="0.89781779049999999" blue="0.89375543589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="containerView" destination="lF4-Wr-Pze" id="GQw-JK-Gde"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGV-n2-Ssv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3102" y="1242"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lKr-22-Zbr">
+            <objects>
+                <viewController id="gZv-Lv-nLD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d2p-K0-jXw"/>
+                        <viewControllerLayoutGuide type="bottom" id="EcF-DF-8Qq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MG8-S9-BKI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eGV-n2-Ssv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLo-AJ-VHK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3104" y="1242"/>
+            <point key="canvasLocation" x="3457" y="1242"/>
         </scene>
     </scenes>
     <resources>
@@ -861,5 +899,6 @@
         <image name="snowman" width="200" height="200"/>
         <image name="transform_icon" width="32" height="32"/>
         <image name="visiual_icon" width="32" height="32"/>
+        <image name="water" width="188" height="256"/>
     </resources>
 </document>
