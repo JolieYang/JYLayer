@@ -22,9 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.dataArray = @[@"CAShapeLayer",@"CATextLayer",@"CATransformLayer",@"CAGradientLayer",@"CAReplicator"];
-    self.vcArray = @[@"CAShapeLayerViewController",@"CATextLayerViewController",@"CATransformLayerViewController", @"CAGradientLayerViewController"
-                     ,@"CAReplicatorViewController"];
+    self.dataArray = @[@"CAShapeLayer",@"CATextLayer",@"CATransformLayer",@"CAGradientLayer",@"CAReplicator"
+                       ,@"CAScrollLayer"];
+    self.vcArray = @[@"CAShapeLayerViewController",@"CATextLayerViewController",@"CATransformLayerViewController",
+                     @"CAGradientLayerViewController",@"CAReplicatorViewController", @"CAScrollLayerViewController"];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -21,6 +21,8 @@
 		A03779661E271A6A009D3DE6 /* CAGradientLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779651E271A6A009D3DE6 /* CAGradientLayerViewController.m */; };
 		A03779691E272670009D3DE6 /* CAReplicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779681E272670009D3DE6 /* CAReplicatorViewController.m */; };
 		A037796C1E2730BB009D3DE6 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A037796B1E2730BB009D3DE6 /* ReflectionView.m */; };
+		A037796F1E286FD7009D3DE6 /* LayerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A037796E1E286FD7009D3DE6 /* LayerScrollView.m */; };
+		A03779721E2871A7009D3DE6 /* CAScrollLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779711E2871A7009D3DE6 /* CAScrollLayerViewController.m */; };
 		A038F5C01E1C9CBD003CCA53 /* SolidObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A038F5BF1E1C9CBD003CCA53 /* SolidObjectsViewController.m */; };
 		A0D23AC01E13555E00BEC8AE /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ABD1E13555E00BEC8AE /* MaskViewController.m */; };
 		A0D23AC11E13555E00BEC8AE /* VisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ABF1E13555E00BEC8AE /* VisionViewController.m */; };
@@ -57,6 +59,10 @@
 		A03779681E272670009D3DE6 /* CAReplicatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAReplicatorViewController.m; sourceTree = "<group>"; };
 		A037796A1E2730BB009D3DE6 /* ReflectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
 		A037796B1E2730BB009D3DE6 /* ReflectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
+		A037796D1E286FD7009D3DE6 /* LayerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerScrollView.h; sourceTree = "<group>"; };
+		A037796E1E286FD7009D3DE6 /* LayerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerScrollView.m; sourceTree = "<group>"; };
+		A03779701E2871A7009D3DE6 /* CAScrollLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAScrollLayerViewController.h; sourceTree = "<group>"; };
+		A03779711E2871A7009D3DE6 /* CAScrollLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAScrollLayerViewController.m; sourceTree = "<group>"; };
 		A038F5BE1E1C9CBD003CCA53 /* SolidObjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SolidObjectsViewController.h; path = "变换/SolidObjectsViewController.h"; sourceTree = "<group>"; };
 		A038F5BF1E1C9CBD003CCA53 /* SolidObjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SolidObjectsViewController.m; path = "变换/SolidObjectsViewController.m"; sourceTree = "<group>"; };
 		A0D23ABC1E13555E00BEC8AE /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaskViewController.h; path = "视觉效果/MaskViewController.h"; sourceTree = "<group>"; };
@@ -148,6 +154,10 @@
 				A03779681E272670009D3DE6 /* CAReplicatorViewController.m */,
 				A037796A1E2730BB009D3DE6 /* ReflectionView.h */,
 				A037796B1E2730BB009D3DE6 /* ReflectionView.m */,
+				A03779701E2871A7009D3DE6 /* CAScrollLayerViewController.h */,
+				A03779711E2871A7009D3DE6 /* CAScrollLayerViewController.m */,
+				A037796D1E286FD7009D3DE6 /* LayerScrollView.h */,
+				A037796E1E286FD7009D3DE6 /* LayerScrollView.m */,
 			);
 			path = "专用图层";
 			sourceTree = "<group>";
@@ -275,6 +285,7 @@
 				A03779661E271A6A009D3DE6 /* CAGradientLayerViewController.m in Sources */,
 				A0D23AC01E13555E00BEC8AE /* MaskViewController.m in Sources */,
 				A008E7051DFFC43D00B6F6D6 /* AppDelegate.m in Sources */,
+				A037796F1E286FD7009D3DE6 /* LayerScrollView.m in Sources */,
 				A037796C1E2730BB009D3DE6 /* ReflectionView.m in Sources */,
 				A037795D1E24BC47009D3DE6 /* CATextLayerViewController.m in Sources */,
 				A008E7021DFFC43D00B6F6D6 /* main.m in Sources */,
@@ -282,6 +293,7 @@
 				A03779631E25CE1A009D3DE6 /* CATransformLayerViewController.m in Sources */,
 				A0D23ACD1E135F2600BEC8AE /* AffinesTransformViewController.m in Sources */,
 				A03779691E272670009D3DE6 /* CAReplicatorViewController.m in Sources */,
+				A03779721E2871A7009D3DE6 /* CAScrollLayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
