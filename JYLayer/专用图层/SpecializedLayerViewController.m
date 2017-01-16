@@ -23,9 +23,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.dataArray = @[@"CAShapeLayer",@"CATextLayer",@"CATransformLayer",@"CAGradientLayer",@"CAReplicator"
-                       ,@"CAScrollLayer"];
-    self.vcArray = @[@"CAShapeLayerViewController",@"CATextLayerViewController",@"CATransformLayerViewController",
-                     @"CAGradientLayerViewController",@"CAReplicatorViewController", @"CAScrollLayerViewController"];
+                       ,@"CAScrollLayer",@"CATiledLayer"];
+    self.vcArray = @[@"CAShapeLayerViewController",@"CATextLayerViewController",@"CATransformLayerViewController"
+                     ,@"CAGradientLayerViewController",@"CAReplicatorViewController", @"CAScrollLayerViewController"
+                     ,@"CATiledLayerViewController"];
 }
 
 - (void)didReceiveMemoryWarning {

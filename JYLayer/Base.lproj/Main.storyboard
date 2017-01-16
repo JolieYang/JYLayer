@@ -508,6 +508,7 @@
                         <segue destination="Qyq-sj-G5X" kind="show" id="zZE-UN-Fr3"/>
                         <segue destination="QKh-xB-3la" kind="show" id="OkB-x1-mgm"/>
                         <segue destination="gZv-Lv-nLD" kind="show" id="7qs-vi-qfP"/>
+                        <segue destination="jXS-lQ-bVT" kind="show" id="Afc-Rs-BtF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvY-uY-BGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -898,10 +899,10 @@
             </objects>
             <point key="canvasLocation" x="3457" y="1242"/>
         </scene>
-        <!--View Controller-->
+        <!--Tiled Layer View Controller-->
         <scene sceneID="dMo-Ii-kgn">
             <objects>
-                <viewController id="jXS-lQ-bVT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CATiledLayerViewController" id="jXS-lQ-bVT" customClass="CATiledLayerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tec-Fz-daP"/>
                         <viewControllerLayoutGuide type="bottom" id="vOV-b7-PMi"/>
@@ -909,13 +910,41 @@
                     <view key="view" contentMode="scaleToFill" id="vKG-Oe-Kqp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLK-7E-Pog">
+                                <rect key="frame" x="20" y="69" width="280" height="443"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="0.90746539829999995" green="0.89781779049999999" blue="0.89375543589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scrollView" destination="jLK-7E-Pog" id="Ud8-KE-5at"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1VU-m3-VuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3802" y="1242"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YWn-ux-SS0">
+            <objects>
+                <viewController id="YWQ-sU-e81" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3A3-b9-ehe"/>
+                        <viewControllerLayoutGuide type="bottom" id="cj6-l8-WzC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3CA-Sq-use">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.90746539829999995" green="0.89781779049999999" blue="0.89375543589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8MT-Ei-2Mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4134" y="1250"/>
         </scene>
     </scenes>
     <resources>
