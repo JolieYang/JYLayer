@@ -508,7 +508,7 @@
                         <segue destination="Qyq-sj-G5X" kind="show" id="zZE-UN-Fr3"/>
                         <segue destination="QKh-xB-3la" kind="show" id="OkB-x1-mgm"/>
                         <segue destination="gZv-Lv-nLD" kind="show" id="7qs-vi-qfP"/>
-                        <segue destination="jXS-lQ-bVT" kind="show" id="Afc-Rs-BtF"/>
+                        <segue destination="YWQ-sU-e81" kind="show" id="x43-98-wRx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvY-uY-BGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -927,10 +927,10 @@
             </objects>
             <point key="canvasLocation" x="3802" y="1242"/>
         </scene>
-        <!--View Controller-->
+        <!--Emitter Layer View Controller-->
         <scene sceneID="YWn-ux-SS0">
             <objects>
-                <viewController id="YWQ-sU-e81" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CAEmitterLayerViewController" id="YWQ-sU-e81" customClass="CAEmitterLayerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3A3-b9-ehe"/>
                         <viewControllerLayoutGuide type="bottom" id="cj6-l8-WzC"/>
@@ -938,13 +938,41 @@
                     <view key="view" contentMode="scaleToFill" id="3CA-Sq-use">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wno-t9-mrz">
+                                <rect key="frame" x="20" y="133" width="280" height="263"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90746539829999995" green="0.89781779049999999" blue="0.89375543589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="containerView" destination="wno-t9-mrz" id="9M2-w6-PQa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8MT-Ei-2Mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4136" y="1242"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Lfn-GH-S0L">
+            <objects>
+                <viewController id="wVT-xV-123" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lfl-8o-JCy"/>
+                        <viewControllerLayoutGuide type="bottom" id="mmd-62-Wxr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T8X-Yo-lpY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.90746539829999995" green="0.89781779049999999" blue="0.89375543589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8MT-Ei-2Mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vhR-dH-Zwx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4134" y="1250"/>
+            <point key="canvasLocation" x="4472" y="1242"/>
         </scene>
     </scenes>
     <resources>

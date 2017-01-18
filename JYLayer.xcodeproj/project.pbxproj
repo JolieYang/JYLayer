@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A008E7021DFFC43D00B6F6D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A008E7011DFFC43D00B6F6D6 /* main.m */; };
 		A008E7051DFFC43D00B6F6D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A008E7041DFFC43D00B6F6D6 /* AppDelegate.m */; };
-		A008E70B1DFFC43D00B6F6D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A008E7091DFFC43D00B6F6D6 /* Main.storyboard */; };
 		A008E70D1DFFC43D00B6F6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A008E70C1DFFC43D00B6F6D6 /* Assets.xcassets */; };
 		A008E7101DFFC43D00B6F6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A008E70E1DFFC43D00B6F6D6 /* LaunchScreen.storyboard */; };
 		A03779541E2331A7009D3DE6 /* SpecializedLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779531E2331A7009D3DE6 /* SpecializedLayerViewController.m */; };
@@ -88,6 +87,8 @@
 		A0377A1D1E2C7609009D3DE6 /* big_snowman_07_05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A03779DD1E2C7609009D3DE6 /* big_snowman_07_05.jpg */; };
 		A0377A1E1E2C7609009D3DE6 /* big_snowman_07_06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A03779DE1E2C7609009D3DE6 /* big_snowman_07_06.jpg */; };
 		A0377A1F1E2C7609009D3DE6 /* big_snowman_07_07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A03779DF1E2C7609009D3DE6 /* big_snowman_07_07.jpg */; };
+		A0377A2A1E2DB0BF009D3DE6 /* CAEmitterLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0377A291E2DB0BF009D3DE6 /* CAEmitterLayerViewController.m */; };
+		A0377A2D1E2F40B0009D3DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0377A2B1E2F40B0009D3DE6 /* Main.storyboard */; };
 		A038F5C01E1C9CBD003CCA53 /* SolidObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A038F5BF1E1C9CBD003CCA53 /* SolidObjectsViewController.m */; };
 		A0D23AC01E13555E00BEC8AE /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ABD1E13555E00BEC8AE /* MaskViewController.m */; };
 		A0D23AC11E13555E00BEC8AE /* VisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ABF1E13555E00BEC8AE /* VisionViewController.m */; };
@@ -102,7 +103,6 @@
 		A008E7011DFFC43D00B6F6D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A008E7031DFFC43D00B6F6D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A008E7041DFFC43D00B6F6D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A008E70A1DFFC43D00B6F6D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A008E70C1DFFC43D00B6F6D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A008E70F1DFFC43D00B6F6D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A008E7111DFFC43D00B6F6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -194,6 +194,9 @@
 		A03779DD1E2C7609009D3DE6 /* big_snowman_07_05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big_snowman_07_05.jpg; sourceTree = "<group>"; };
 		A03779DE1E2C7609009D3DE6 /* big_snowman_07_06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big_snowman_07_06.jpg; sourceTree = "<group>"; };
 		A03779DF1E2C7609009D3DE6 /* big_snowman_07_07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = big_snowman_07_07.jpg; sourceTree = "<group>"; };
+		A0377A281E2DB0BF009D3DE6 /* CAEmitterLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEmitterLayerViewController.h; sourceTree = "<group>"; };
+		A0377A291E2DB0BF009D3DE6 /* CAEmitterLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEmitterLayerViewController.m; sourceTree = "<group>"; };
+		A0377A2C1E2F40B0009D3DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = JYLayer/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A038F5BE1E1C9CBD003CCA53 /* SolidObjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SolidObjectsViewController.h; path = "变换/SolidObjectsViewController.h"; sourceTree = "<group>"; };
 		A038F5BF1E1C9CBD003CCA53 /* SolidObjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SolidObjectsViewController.m; path = "变换/SolidObjectsViewController.m"; sourceTree = "<group>"; };
 		A0D23ABC1E13555E00BEC8AE /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaskViewController.h; path = "视觉效果/MaskViewController.h"; sourceTree = "<group>"; };
@@ -247,7 +250,7 @@
 				A03779511E232C94009D3DE6 /* 专用图层 */,
 				A008E7031DFFC43D00B6F6D6 /* AppDelegate.h */,
 				A008E7041DFFC43D00B6F6D6 /* AppDelegate.m */,
-				A008E7091DFFC43D00B6F6D6 /* Main.storyboard */,
+				A0377A2B1E2F40B0009D3DE6 /* Main.storyboard */,
 				A008E70C1DFFC43D00B6F6D6 /* Assets.xcassets */,
 				A008E7001DFFC43D00B6F6D6 /* Supporting Files */,
 			);
@@ -292,6 +295,8 @@
 				A037796E1E286FD7009D3DE6 /* LayerScrollView.m */,
 				A03779881E2C65D0009D3DE6 /* CATiledLayerViewController.h */,
 				A03779891E2C65D0009D3DE6 /* CATiledLayerViewController.m */,
+				A0377A281E2DB0BF009D3DE6 /* CAEmitterLayerViewController.h */,
+				A0377A291E2DB0BF009D3DE6 /* CAEmitterLayerViewController.m */,
 			);
 			path = "专用图层";
 			sourceTree = "<group>";
@@ -526,10 +531,10 @@
 				A0377A121E2C7609009D3DE6 /* big_snowman_06_02.jpg in Resources */,
 				A03779F21E2C7609009D3DE6 /* big_snowman_02_02.jpg in Resources */,
 				A0377A1B1E2C7609009D3DE6 /* big_snowman_07_03.jpg in Resources */,
-				A008E70B1DFFC43D00B6F6D6 /* Main.storyboard in Resources */,
 				A0377A1A1E2C7609009D3DE6 /* big_snowman_07_02.jpg in Resources */,
 				A03779FF1E2C7609009D3DE6 /* big_snowman_03_07.jpg in Resources */,
 				A0377A0A1E2C7609009D3DE6 /* big_snowman_05_02.jpg in Resources */,
+				A0377A2D1E2F40B0009D3DE6 /* Main.storyboard in Resources */,
 				A0377A161E2C7609009D3DE6 /* big_snowman_06_06.jpg in Resources */,
 				A0377A0C1E2C7609009D3DE6 /* big_snowman_05_04.jpg in Resources */,
 				A0377A1E1E2C7609009D3DE6 /* big_snowman_07_06.jpg in Resources */,
@@ -560,6 +565,7 @@
 				A008E7021DFFC43D00B6F6D6 /* main.m in Sources */,
 				A037798A1E2C65D0009D3DE6 /* CATiledLayerViewController.m in Sources */,
 				A0D23AC11E13555E00BEC8AE /* VisionViewController.m in Sources */,
+				A0377A2A1E2DB0BF009D3DE6 /* CAEmitterLayerViewController.m in Sources */,
 				A03779631E25CE1A009D3DE6 /* CATransformLayerViewController.m in Sources */,
 				A0D23ACD1E135F2600BEC8AE /* AffinesTransformViewController.m in Sources */,
 				A03779691E272670009D3DE6 /* CAReplicatorViewController.m in Sources */,
@@ -570,20 +576,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A008E7091DFFC43D00B6F6D6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A008E70A1DFFC43D00B6F6D6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A008E70E1DFFC43D00B6F6D6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A008E70F1DFFC43D00B6F6D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A0377A2B1E2F40B0009D3DE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0377A2C1E2F40B0009D3DE6 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

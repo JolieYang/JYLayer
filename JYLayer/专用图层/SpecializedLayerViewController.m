@@ -23,10 +23,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.dataArray = @[@"CAShapeLayer",@"CATextLayer",@"CATransformLayer",@"CAGradientLayer",@"CAReplicator"
-                       ,@"CAScrollLayer",@"CATiledLayer"];
+                       ,@"CAScrollLayer",@"CATiledLayer",@"CAEmitterLayer"];
     self.vcArray = @[@"CAShapeLayerViewController",@"CATextLayerViewController",@"CATransformLayerViewController"
                      ,@"CAGradientLayerViewController",@"CAReplicatorViewController", @"CAScrollLayerViewController"
-                     ,@"CATiledLayerViewController"];
+                     ,@"CATiledLayerViewController",@"CAEmitterLayerViewController"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +37,7 @@
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:self.vcArray[indexPath.row]];
+    self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
