@@ -29,6 +29,9 @@
                      ,@"CATiledLayerViewController",@"CAEmitterLayerViewController"];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -37,7 +40,7 @@
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:self.vcArray[indexPath.row]];
-    self.hidesBottomBarWhenPushed = YES;
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

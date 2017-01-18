@@ -508,7 +508,6 @@
                         <segue destination="Qyq-sj-G5X" kind="show" id="zZE-UN-Fr3"/>
                         <segue destination="QKh-xB-3la" kind="show" id="OkB-x1-mgm"/>
                         <segue destination="gZv-Lv-nLD" kind="show" id="7qs-vi-qfP"/>
-                        <segue destination="YWQ-sU-e81" kind="show" id="x43-98-wRx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bvY-uY-BGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -940,9 +939,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wno-t9-mrz">
-                                <rect key="frame" x="20" y="133" width="280" height="263"/>
+                                <rect key="frame" x="20" y="72" width="280" height="450"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1z-cp-dci">
+                                <rect key="frame" x="36" y="530" width="30" height="30"/>
+                                <state key="normal" title="火"/>
+                                <connections>
+                                    <action selector="fireAction:" destination="YWQ-sU-e81" eventType="touchUpInside" id="Cai-QV-29j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbU-My-C3V">
+                                <rect key="frame" x="255" y="530" width="30" height="30"/>
+                                <state key="normal" title="移除"/>
+                                <connections>
+                                    <action selector="removeEmitterAction:" destination="YWQ-sU-e81" eventType="touchUpInside" id="kZ4-yK-Xcn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccK-el-gLY">
+                                <rect key="frame" x="113" y="530" width="30" height="30"/>
+                                <state key="normal" title="雪花"/>
+                                <connections>
+                                    <action selector="snowFlakeAction:" destination="YWQ-sU-e81" eventType="touchUpInside" id="5AW-3b-kmR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90746539829999995" green="0.89781779049999999" blue="0.89375543589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -953,7 +973,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8MT-Ei-2Mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4136" y="1242"/>
+            <point key="canvasLocation" x="4156" y="1242"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Lfn-GH-S0L">
@@ -972,7 +992,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhR-dH-Zwx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4472" y="1242"/>
+            <point key="canvasLocation" x="4507" y="1242"/>
         </scene>
     </scenes>
     <resources>
