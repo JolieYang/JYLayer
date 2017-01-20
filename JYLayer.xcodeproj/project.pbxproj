@@ -11,6 +11,7 @@
 		A008E7051DFFC43D00B6F6D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A008E7041DFFC43D00B6F6D6 /* AppDelegate.m */; };
 		A008E70D1DFFC43D00B6F6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A008E70C1DFFC43D00B6F6D6 /* Assets.xcassets */; };
 		A008E7101DFFC43D00B6F6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A008E70E1DFFC43D00B6F6D6 /* LaunchScreen.storyboard */; };
+		A00EB9811E31AD5800AE62BC /* CAEAGLLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00EB9801E31AD5800AE62BC /* CAEAGLLayerViewController.m */; };
 		A03779541E2331A7009D3DE6 /* SpecializedLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779531E2331A7009D3DE6 /* SpecializedLayerViewController.m */; };
 		A03779571E233E50009D3DE6 /* CAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779561E233E50009D3DE6 /* CAShapeLayerViewController.m */; };
 		A037795A1E238154009D3DE6 /* CustomBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779591E238154009D3DE6 /* CustomBezierPathView.m */; };
@@ -106,6 +107,8 @@
 		A008E70C1DFFC43D00B6F6D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A008E70F1DFFC43D00B6F6D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A008E7111DFFC43D00B6F6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00EB97F1E31AD5700AE62BC /* CAEAGLLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEAGLLayerViewController.h; sourceTree = "<group>"; };
+		A00EB9801E31AD5800AE62BC /* CAEAGLLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEAGLLayerViewController.m; sourceTree = "<group>"; };
 		A03779521E2331A7009D3DE6 /* SpecializedLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecializedLayerViewController.h; sourceTree = "<group>"; };
 		A03779531E2331A7009D3DE6 /* SpecializedLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecializedLayerViewController.m; sourceTree = "<group>"; };
 		A03779551E233E50009D3DE6 /* CAShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -297,6 +300,8 @@
 				A03779891E2C65D0009D3DE6 /* CATiledLayerViewController.m */,
 				A0377A281E2DB0BF009D3DE6 /* CAEmitterLayerViewController.h */,
 				A0377A291E2DB0BF009D3DE6 /* CAEmitterLayerViewController.m */,
+				A00EB97F1E31AD5700AE62BC /* CAEAGLLayerViewController.h */,
+				A00EB9801E31AD5800AE62BC /* CAEAGLLayerViewController.m */,
 			);
 			path = "专用图层";
 			sourceTree = "<group>";
@@ -569,6 +574,7 @@
 				A03779631E25CE1A009D3DE6 /* CATransformLayerViewController.m in Sources */,
 				A0D23ACD1E135F2600BEC8AE /* AffinesTransformViewController.m in Sources */,
 				A03779691E272670009D3DE6 /* CAReplicatorViewController.m in Sources */,
+				A00EB9811E31AD5800AE62BC /* CAEAGLLayerViewController.m in Sources */,
 				A03779721E2871A7009D3DE6 /* CAScrollLayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
