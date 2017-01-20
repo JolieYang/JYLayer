@@ -12,6 +12,9 @@
 		A008E70D1DFFC43D00B6F6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A008E70C1DFFC43D00B6F6D6 /* Assets.xcassets */; };
 		A008E7101DFFC43D00B6F6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A008E70E1DFFC43D00B6F6D6 /* LaunchScreen.storyboard */; };
 		A00EB9811E31AD5800AE62BC /* CAEAGLLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00EB9801E31AD5800AE62BC /* CAEAGLLayerViewController.m */; };
+		A00EB9841E31B71C00AE62BC /* AVPlayerLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00EB9831E31B71C00AE62BC /* AVPlayerLayerViewController.m */; };
+		A00EB9881E31BB6000AE62BC /* chris_tree.png in Resources */ = {isa = PBXBuildFile; fileRef = A00EB9871E31BB6000AE62BC /* chris_tree.png */; };
+		A00EB98C1E31DE4D00AE62BC /* ChinaPromotionalVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A00EB98B1E31DE4D00AE62BC /* ChinaPromotionalVideo.mp4 */; };
 		A03779541E2331A7009D3DE6 /* SpecializedLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779531E2331A7009D3DE6 /* SpecializedLayerViewController.m */; };
 		A03779571E233E50009D3DE6 /* CAShapeLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779561E233E50009D3DE6 /* CAShapeLayerViewController.m */; };
 		A037795A1E238154009D3DE6 /* CustomBezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = A03779591E238154009D3DE6 /* CustomBezierPathView.m */; };
@@ -109,6 +112,10 @@
 		A008E7111DFFC43D00B6F6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A00EB97F1E31AD5700AE62BC /* CAEAGLLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAEAGLLayerViewController.h; sourceTree = "<group>"; };
 		A00EB9801E31AD5800AE62BC /* CAEAGLLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAEAGLLayerViewController.m; sourceTree = "<group>"; };
+		A00EB9821E31B71C00AE62BC /* AVPlayerLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerLayerViewController.h; sourceTree = "<group>"; };
+		A00EB9831E31B71C00AE62BC /* AVPlayerLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerLayerViewController.m; sourceTree = "<group>"; };
+		A00EB9871E31BB6000AE62BC /* chris_tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chris_tree.png; sourceTree = "<group>"; };
+		A00EB98B1E31DE4D00AE62BC /* ChinaPromotionalVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChinaPromotionalVideo.mp4; sourceTree = "<group>"; };
 		A03779521E2331A7009D3DE6 /* SpecializedLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecializedLayerViewController.h; sourceTree = "<group>"; };
 		A03779531E2331A7009D3DE6 /* SpecializedLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecializedLayerViewController.m; sourceTree = "<group>"; };
 		A03779551E233E50009D3DE6 /* CAShapeLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerViewController.h; sourceTree = "<group>"; };
@@ -255,6 +262,7 @@
 				A008E7041DFFC43D00B6F6D6 /* AppDelegate.m */,
 				A0377A2B1E2F40B0009D3DE6 /* Main.storyboard */,
 				A008E70C1DFFC43D00B6F6D6 /* Assets.xcassets */,
+				A00EB9851E31B9FC00AE62BC /* Resource */,
 				A008E7001DFFC43D00B6F6D6 /* Supporting Files */,
 			);
 			path = JYLayer;
@@ -263,12 +271,21 @@
 		A008E7001DFFC43D00B6F6D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A037799F1E2C7609009D3DE6 /* Tile */,
 				A008E70E1DFFC43D00B6F6D6 /* LaunchScreen.storyboard */,
 				A008E7111DFFC43D00B6F6D6 /* Info.plist */,
 				A008E7011DFFC43D00B6F6D6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A00EB9851E31B9FC00AE62BC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A00EB98B1E31DE4D00AE62BC /* ChinaPromotionalVideo.mp4 */,
+				A037799F1E2C7609009D3DE6 /* Tile */,
+				A00EB9871E31BB6000AE62BC /* chris_tree.png */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 		A03779511E232C94009D3DE6 /* 专用图层 */ = {
@@ -302,6 +319,8 @@
 				A0377A291E2DB0BF009D3DE6 /* CAEmitterLayerViewController.m */,
 				A00EB97F1E31AD5700AE62BC /* CAEAGLLayerViewController.h */,
 				A00EB9801E31AD5800AE62BC /* CAEAGLLayerViewController.m */,
+				A00EB9821E31B71C00AE62BC /* AVPlayerLayerViewController.h */,
+				A00EB9831E31B71C00AE62BC /* AVPlayerLayerViewController.m */,
 			);
 			path = "专用图层";
 			sourceTree = "<group>";
@@ -477,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A008E7101DFFC43D00B6F6D6 /* LaunchScreen.storyboard in Resources */,
+				A00EB9881E31BB6000AE62BC /* chris_tree.png in Resources */,
 				A008E70D1DFFC43D00B6F6D6 /* Assets.xcassets in Resources */,
 				A0377A0F1E2C7609009D3DE6 /* big_snowman_05_07.jpg in Resources */,
 				A0377A151E2C7609009D3DE6 /* big_snowman_06_05.jpg in Resources */,
@@ -534,6 +554,7 @@
 				A0377A081E2C7609009D3DE6 /* big_snowman_05_00.jpg in Resources */,
 				A03779FC1E2C7609009D3DE6 /* big_snowman_03_04.jpg in Resources */,
 				A0377A121E2C7609009D3DE6 /* big_snowman_06_02.jpg in Resources */,
+				A00EB98C1E31DE4D00AE62BC /* ChinaPromotionalVideo.mp4 in Resources */,
 				A03779F21E2C7609009D3DE6 /* big_snowman_02_02.jpg in Resources */,
 				A0377A1B1E2C7609009D3DE6 /* big_snowman_07_03.jpg in Resources */,
 				A0377A1A1E2C7609009D3DE6 /* big_snowman_07_02.jpg in Resources */,
@@ -561,6 +582,7 @@
 				A03779571E233E50009D3DE6 /* CAShapeLayerViewController.m in Sources */,
 				A037795A1E238154009D3DE6 /* CustomBezierPathView.m in Sources */,
 				A0D23ACA1E1355FC00BEC8AE /* LayerGeometryViewController.m in Sources */,
+				A00EB9841E31B71C00AE62BC /* AVPlayerLayerViewController.m in Sources */,
 				A03779661E271A6A009D3DE6 /* CAGradientLayerViewController.m in Sources */,
 				A0D23AC01E13555E00BEC8AE /* MaskViewController.m in Sources */,
 				A008E7051DFFC43D00B6F6D6 /* AppDelegate.m in Sources */,

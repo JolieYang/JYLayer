@@ -1003,10 +1003,10 @@
             </objects>
             <point key="canvasLocation" x="4507" y="1242"/>
         </scene>
-        <!--View Controller-->
+        <!--Player Layer View Controller-->
         <scene sceneID="19U-wA-cTZ">
             <objects>
-                <viewController id="pZk-eY-HvJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AVPlayerLayerViewController" id="pZk-eY-HvJ" customClass="AVPlayerLayerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Fh-Am-aHb"/>
                         <viewControllerLayoutGuide type="bottom" id="8tn-Fm-vwj"/>
@@ -1014,9 +1014,18 @@
                     <view key="view" contentMode="scaleToFill" id="Vrh-3Z-brJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vgz-gm-coT">
+                                <rect key="frame" x="20" y="73" width="280" height="236"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.90746539829999995" green="0.89781779049999999" blue="0.89375543589999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="containerView" destination="Vgz-gm-coT" id="zDz-RP-B18"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfN-fD-3xb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

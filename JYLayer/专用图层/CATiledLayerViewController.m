@@ -25,7 +25,7 @@
 - (void)addTileLayer {
     CATiledLayer *tileLayer = [CATiledLayer layer];
     tileLayer.frame = CGRectMake(0, 0, 2048, 2048);
-//    tileLayer.delegate = self;
+    tileLayer.delegate = self;
     [self.scrollView.layer addSublayer:tileLayer];
     
     self.scrollView.contentSize = tileLayer.frame.size;
@@ -41,7 +41,7 @@
     
     // 加载图片
     NSString *imageName = [NSString stringWithFormat:@"big_snowman_%02li_%02li", (long)x , (long)y];
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:imageName ofType:@"jpg"];
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource: imageName ofType:@"jpg"];
     UIImage *tileImage = [UIImage imageWithContentsOfFile:imagePath];
 //    UIImage *tileImage = [UIImage imageNamed:imageName];
     

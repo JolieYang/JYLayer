@@ -23,10 +23,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.dataArray = @[@"CAShapeLayer",@"CATextLayer",@"CATransformLayer",@"CAGradientLayer",@"CAReplicator"
-                       ,@"CAScrollLayer",@"CATiledLayer",@"CAEmitterLayer",@"CAEAGLLayer"];
+                       ,@"CAScrollLayer",@"CATiledLayer",@"CAEmitterLayer",@"CAEAGLLayer",@"AVPlayerLayer"];
     self.vcArray = @[@"CAShapeLayerViewController",@"CATextLayerViewController",@"CATransformLayerViewController"
                      ,@"CAGradientLayerViewController",@"CAReplicatorViewController", @"CAScrollLayerViewController"
-                     ,@"CATiledLayerViewController",@"CAEmitterLayerViewController",@"CAEAGLLayerViewController"];
+                     ,@"CATiledLayerViewController",@"CAEmitterLayerViewController",@"CAEAGLLayerViewController"
+                     ,@"AVPlayerLayerViewController"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
