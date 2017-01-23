@@ -18,17 +18,109 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oL2-tI-wug">
-                                <rect key="frame" x="20" y="85" width="280" height="234"/>
+                                <rect key="frame" x="60" y="79" width="200" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaK-Pj-HHm">
+                                <rect key="frame" x="17" y="351" width="60" height="30"/>
+                                <state key="normal" title="改变颜色"/>
+                                <connections>
+                                    <action selector="changeColorAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="Ybc-rm-i88"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tas-Bi-tuK">
+                                <rect key="frame" x="97" y="351" width="90" height="30"/>
+                                <state key="normal" title="事务改变颜色"/>
+                                <connections>
+                                    <action selector="transitionChangeColorAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="NR2-fR-xMA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0l-xo-Bl9">
+                                <rect key="frame" x="17" y="381" width="196" height="30"/>
+                                <state key="normal" title="改变颜色并添加CompleBlock"/>
+                                <connections>
+                                    <action selector="changeColorByAddCompleBlockAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="TKa-rz-axw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQ1-Q5-O0H">
+                                <rect key="frame" x="223" y="381" width="90" height="30"/>
+                                <state key="normal" title="改变底图颜色"/>
+                                <connections>
+                                    <action selector="changeBackingViewColorAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="jL5-Rk-9J9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L3-2y-h3e">
+                                <rect key="frame" x="17" y="409" width="90" height="30"/>
+                                <state key="normal" title="启用隐式动画"/>
+                                <connections>
+                                    <action selector="enableImplicitAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="dkp-Ns-Bvb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giD-0p-Ri0">
+                                <rect key="frame" x="130" y="409" width="60" height="30"/>
+                                <state key="normal" title="推进过渡"/>
+                                <connections>
+                                    <action selector="pushTransitionAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="c6I-Se-uKl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWa-Wa-GG2">
+                                <rect key="frame" x="17" y="292" width="102" height="30"/>
+                                <state key="normal" title="添加colorLayer"/>
+                                <connections>
+                                    <action selector="configColorLayer" destination="AA7-Gv-d3R" eventType="touchUpInside" id="LPa-Ia-8Fg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHz-EE-tdy">
+                                <rect key="frame" x="142" y="292" width="102" height="30"/>
+                                <state key="normal" title="移除colorLayer"/>
+                                <connections>
+                                    <action selector="removeColorLayerAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="XSu-vh-40c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jg-yp-RW2">
+                                <rect key="frame" x="17" y="320" width="207" height="30"/>
+                                <state key="normal" title="添加Custom Action colorLayer"/>
+                                <connections>
+                                    <action selector="addColorLayerWithCustomAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="NvT-j9-ZJM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4p-p7-mpX">
+                                <rect key="frame" x="127" y="36" width="60" height="30"/>
+                                <state key="normal" title="返回首页"/>
+                                <connections>
+                                    <action selector="homeAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="6RI-ND-OaW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="jce-Gp-KoT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="layerView" destination="oL2-tI-wug" id="hDf-Xj-Lcu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcz-Lh-U3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="387"/>
+            <point key="canvasLocation" x="826" y="378"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cmM-84-WIl">
+            <objects>
+                <tabBarController storyboardIdentifier="PartTwoHome" automaticallyAdjustsScrollViewInsets="NO" id="ZgA-mj-8LB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="beW-ao-25h">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="AA7-Gv-d3R" kind="relationship" relationship="viewControllers" id="ao0-kK-bhT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFs-AQ-dJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408" y="378"/>
         </scene>
     </scenes>
 </document>

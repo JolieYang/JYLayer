@@ -7,6 +7,7 @@
 //
 
 #import "ContentViewController.h"
+#import "AppDelegate.h"
 
 @interface ContentViewController ()
 
@@ -68,6 +69,11 @@
     layer.contents = (__bridge id)image.CGImage;
     layer.contentsGravity = kCAGravityResizeAspect;
     layer.contentsRect = rect;
+}
+- (IBAction)backHomeAction:(id)sender {
+    UIViewController *vc = [[self storyboard] instantiateViewControllerWithIdentifier:@"HomeViewController"];
+    AppDelegate *pDelegate = [UIApplication sharedApplication].delegate;
+    pDelegate.window.rootViewController = vc;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -24,8 +24,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)jumpToPartTwoAction:(id)sender {
-    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Motion" bundle:nil] instantiateViewControllerWithIdentifier:@"TransitionsViewController"];
-    [self.navigationController pushViewController:vc animated:YES];
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Motion" bundle:nil] instantiateViewControllerWithIdentifier:@"PartTwoHome"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 - (IBAction)jumpToPartThreeAction:(id)sender {
     NSLog(@"该部分还未开始学习");

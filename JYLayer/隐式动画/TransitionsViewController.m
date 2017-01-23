@@ -7,8 +7,11 @@
 //
 
 #import "TransitionsViewController.h"
+#import "AppDelegate.h"
 
 @interface TransitionsViewController ()
+@property (weak, nonatomic) IBOutlet UIView *layerView;
+@property (nonatomic, strong) CALayer *colorLayer;
 
 @end
 
@@ -17,21 +20,138 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+}
+- (IBAction)homeAction:(id)sender {
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"HomeViewController"];
+    AppDelegate *pDelegate = [UIApplication sharedApplication].delegate;
+    pDelegate.window.rootViewController = vc;
+}
+
+// 添加colorLayer
+- (IBAction)configColorLayer {
+    if (self.colorLayer) {
+        return;
+    }
+    self.colorLayer = [CALayer layer];
+    //    self.colorLayer.frame = self.layerView.bounds;
+    self.colorLayer.frame = CGRectMake(50, 50, 100, 100);
+    self.colorLayer.backgroundColor = [UIColor blueColor].CGColor;
+    [self.layerView.layer addSublayer:self.colorLayer];
+}
+// 添加具备Custom Action的colorLayer. 现调用这个，然后再调用改变颜色，隐式动画为指定的Custom Action，即颜色切换时会从左边push。
+- (IBAction)addColorLayerWithCustomAction:(id)sender {
+    if (self.colorLayer) {
+        return;
+    }
+    self.colorLayer = [CALayer layer];
+    self.colorLayer.frame = CGRectMake(50, 50, 100, 100);
+    self.colorLayer.backgroundColor = [UIColor blueColor].CGColor;
+    
+    // 添加custom Action
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionPush;
+    transition.subtype = kCATransitionFromLeft;
+    self.colorLayer.actions = @{@"backgroundColor": transition};
+    
+    [self.layerView.layer addSublayer:self.colorLayer];
+}
+
+// 移除colorLayer
+- (IBAction)removeColorLayerAction:(id)sender {
+    if (self.layerView.layer.sublayers.count == 0) {
+        return;
+    } else {
+        [self.layerView.layer.sublayers[0] removeFromSuperlayer];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)changeColorAction:(id)sender {
+    [self configColorLayer];
+    
+    
+    CGFloat red = arc4random() / (CGFloat)INT_MAX;
+    CGFloat green = arc4random() / (CGFloat)INT_MAX;
+    CGFloat blue = arc4random() / (CGFloat)INT_MAX;
+    self.colorLayer.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0].CGColor;
 }
-*/
+
+// 通过新建事务无副作用的修改动画时间
+- (IBAction)transitionChangeColorAction:(id)sender {
+    [self configColorLayer];
+    
+    
+    [CATransaction begin];
+    [CATransaction setAnimationDuration:1.0];
+    
+    [self changeColorAction:nil];
+    
+    [CATransaction commit];
+}
+// 设置动画完成块--选择90度
+- (IBAction)changeColorByAddCompleBlockAction:(id)sender {
+    [self configColorLayer];
+    
+    
+    
+    [CATransaction begin];
+    [CATransaction setAnimationDuration:1.0];
+    [CATransaction setCompletionBlock:^{
+        CGAffineTransform transform = self.colorLayer.affineTransform;
+        transform = CGAffineTransformRotate(transform, M_PI_4);
+        self.colorLayer.affineTransform = transform;
+    }];
+    
+    [self changeColorAction:nil];
+    
+    [CATransaction commit];
+}
+// 修改底图颜色--动画的执行并不是按动画持续时间平滑的过渡，而是直接切换。
+- (IBAction)changeBackingViewColorAction:(id)sender {
+    [CATransaction begin];
+    [CATransaction setAnimationDuration:2.0];
+    
+    CGFloat red = arc4random() / (CGFloat)INT_MAX;
+    CGFloat green = arc4random() / (CGFloat)INT_MAX;
+    CGFloat blue = arc4random() / (CGFloat)INT_MAX;
+    self.layerView.layer.backgroundColor = [UIColor colorWithRed:red
+                                                           green:green
+                                                            blue:blue
+                                                           alpha:1.0].CGColor;
+    
+    [CATransaction commit];
+}
+
+// 启用隐式动画修改底图颜色
+- (IBAction)enableImplicitAction:(id)sender {
+    NSLog(@"Outside:%@", [self.layerView actionForLayer:self.layerView.layer forKey:@"backgroundColor"]);
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:2.0];
+    
+    CGFloat red = arc4random() / (CGFloat)INT_MAX;
+    CGFloat green = arc4random() / (CGFloat)INT_MAX;
+    CGFloat blue = arc4random() / (CGFloat)INT_MAX;
+    self.layerView.layer.backgroundColor = [UIColor colorWithRed:red
+                                                           green:green
+                                                            blue:blue
+                                                           alpha:1.0].CGColor;
+    
+    
+    NSLog(@"Inside:%@", [self.layerView actionForLayer:self.layerView.layer forKey:@"backgroundColor"]);
+    
+    [UIView commitAnimations];
+}
+
+// 使用推进过渡动画改颜色
+- (IBAction)pushTransitionAction:(id)sender {
+    
+}
+
+
 
 @end
