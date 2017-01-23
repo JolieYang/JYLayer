@@ -100,6 +100,9 @@
 		A0D23ACA1E1355FC00BEC8AE /* LayerGeometryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AC91E1355FC00BEC8AE /* LayerGeometryViewController.m */; };
 		A0D23ACD1E135F2600BEC8AE /* AffinesTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23ACC1E135F2600BEC8AE /* AffinesTransformViewController.m */; };
 		A0D23AD21E1375C600BEC8AE /* 3DTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AD11E1375C600BEC8AE /* 3DTransformViewController.m */; };
+		A0D348B71E359FF6001F5761 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D348B61E359FF6001F5761 /* HomeViewController.m */; };
+		A0D348B91E35A171001F5761 /* Motion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D348B81E35A171001F5761 /* Motion.storyboard */; };
+		A0D348BC1E35A1DC001F5761 /* TransitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D348BB1E35A1DC001F5761 /* TransitionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -221,6 +224,11 @@
 		A0D23ACC1E135F2600BEC8AE /* AffinesTransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AffinesTransformViewController.m; path = "变换/AffinesTransformViewController.m"; sourceTree = "<group>"; };
 		A0D23AD01E1375C600BEC8AE /* 3DTransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 3DTransformViewController.h; path = "变换/3DTransformViewController.h"; sourceTree = "<group>"; };
 		A0D23AD11E1375C600BEC8AE /* 3DTransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 3DTransformViewController.m; path = "变换/3DTransformViewController.m"; sourceTree = "<group>"; };
+		A0D348B51E359FF6001F5761 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A0D348B61E359FF6001F5761 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A0D348B81E35A171001F5761 /* Motion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Motion.storyboard; sourceTree = "<group>"; };
+		A0D348BA1E35A1DC001F5761 /* TransitionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionsViewController.h; sourceTree = "<group>"; };
+		A0D348BB1E35A1DC001F5761 /* TransitionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,14 +261,14 @@
 		A008E6FF1DFFC43D00B6F6D6 /* JYLayer */ = {
 			isa = PBXGroup;
 			children = (
-				A0D23AC31E1355D200BEC8AE /* 寄宿图 */,
-				A0D23AC71E1355DF00BEC8AE /* 图层几何学 */,
-				A0D23AB81E124FC700BEC8AE /* 视觉效果 */,
-				A0D23AC21E13556B00BEC8AE /* 变换 */,
-				A03779511E232C94009D3DE6 /* 专用图层 */,
+				A0D348B51E359FF6001F5761 /* HomeViewController.h */,
+				A0D348B61E359FF6001F5761 /* HomeViewController.m */,
 				A008E7031DFFC43D00B6F6D6 /* AppDelegate.h */,
 				A008E7041DFFC43D00B6F6D6 /* AppDelegate.m */,
+				A0D348AE1E359C23001F5761 /* 第一部分 */,
+				A0D348AF1E359C30001F5761 /* 第二部分 */,
 				A0377A2B1E2F40B0009D3DE6 /* Main.storyboard */,
+				A0D348B81E35A171001F5761 /* Motion.storyboard */,
 				A008E70C1DFFC43D00B6F6D6 /* Assets.xcassets */,
 				A00EB9851E31B9FC00AE62BC /* Resource */,
 				A008E7001DFFC43D00B6F6D6 /* Supporting Files */,
@@ -438,6 +446,67 @@
 			name = "图层几何学";
 			sourceTree = "<group>";
 		};
+		A0D348AE1E359C23001F5761 /* 第一部分 */ = {
+			isa = PBXGroup;
+			children = (
+				A0D23AC31E1355D200BEC8AE /* 寄宿图 */,
+				A0D23AC71E1355DF00BEC8AE /* 图层几何学 */,
+				A0D23AB81E124FC700BEC8AE /* 视觉效果 */,
+				A0D23AC21E13556B00BEC8AE /* 变换 */,
+				A03779511E232C94009D3DE6 /* 专用图层 */,
+			);
+			name = "第一部分";
+			sourceTree = "<group>";
+		};
+		A0D348AF1E359C30001F5761 /* 第二部分 */ = {
+			isa = PBXGroup;
+			children = (
+				A0D348B41E359DD5001F5761 /* 隐式动画 */,
+				A0D348B01E359D4F001F5761 /* 显式动画 */,
+				A0D348B31E359DD5001F5761 /* 图层时间 */,
+				A0D348B11E359DD5001F5761 /* 缓冲 */,
+				A0D348B21E359DD5001F5761 /* 基于定期器的动画 */,
+			);
+			name = "第二部分";
+			sourceTree = "<group>";
+		};
+		A0D348B01E359D4F001F5761 /* 显式动画 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "显式动画";
+			sourceTree = "<group>";
+		};
+		A0D348B11E359DD5001F5761 /* 缓冲 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "缓冲";
+			sourceTree = "<group>";
+		};
+		A0D348B21E359DD5001F5761 /* 基于定期器的动画 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "基于定期器的动画";
+			sourceTree = "<group>";
+		};
+		A0D348B31E359DD5001F5761 /* 图层时间 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "图层时间";
+			sourceTree = "<group>";
+		};
+		A0D348B41E359DD5001F5761 /* 隐式动画 */ = {
+			isa = PBXGroup;
+			children = (
+				A0D348BA1E35A1DC001F5761 /* TransitionsViewController.h */,
+				A0D348BB1E35A1DC001F5761 /* TransitionsViewController.m */,
+			);
+			path = "隐式动画";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -509,6 +578,7 @@
 				A0377A1F1E2C7609009D3DE6 /* big_snowman_07_07.jpg in Resources */,
 				A0377A051E2C7609009D3DE6 /* big_snowman_04_05.jpg in Resources */,
 				A0377A111E2C7609009D3DE6 /* big_snowman_06_01.jpg in Resources */,
+				A0D348B91E35A171001F5761 /* Motion.storyboard in Resources */,
 				A03779E21E2C7609009D3DE6 /* big_snowman_00_02.jpg in Resources */,
 				A0377A131E2C7609009D3DE6 /* big_snowman_06_03.jpg in Resources */,
 				A0377A191E2C7609009D3DE6 /* big_snowman_07_01.jpg in Resources */,
@@ -577,6 +647,7 @@
 				A03779541E2331A7009D3DE6 /* SpecializedLayerViewController.m in Sources */,
 				A038F5C01E1C9CBD003CCA53 /* SolidObjectsViewController.m in Sources */,
 				A0D23AD21E1375C600BEC8AE /* 3DTransformViewController.m in Sources */,
+				A0D348B71E359FF6001F5761 /* HomeViewController.m in Sources */,
 				A0D23AC61E1355DA00BEC8AE /* ContentViewController.m in Sources */,
 				A03779601E24CC03009D3DE6 /* LayerLabel.m in Sources */,
 				A03779571E233E50009D3DE6 /* CAShapeLayerViewController.m in Sources */,
@@ -588,6 +659,7 @@
 				A008E7051DFFC43D00B6F6D6 /* AppDelegate.m in Sources */,
 				A037796F1E286FD7009D3DE6 /* LayerScrollView.m in Sources */,
 				A037796C1E2730BB009D3DE6 /* ReflectionView.m in Sources */,
+				A0D348BC1E35A1DC001F5761 /* TransitionsViewController.m in Sources */,
 				A037795D1E24BC47009D3DE6 /* CATextLayerViewController.m in Sources */,
 				A008E7021DFFC43D00B6F6D6 /* main.m in Sources */,
 				A037798A1E2C65D0009D3DE6 /* CATiledLayerViewController.m in Sources */,
