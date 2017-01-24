@@ -63,6 +63,7 @@
         return;
     } else {
         [self.layerView.layer.sublayers[0] removeFromSuperlayer];
+        self.colorLayer = nil;
     }
 }
 
@@ -147,10 +148,27 @@
     [UIView commitAnimations];
 }
 
-// 使用推进过渡动画改颜色
-- (IBAction)pushTransitionAction:(id)sender {
+// 使用呈现图层去检测当前图层的位置对，demo: 对colorLayer做检测，点击在colorLayer区域就修改color的背景色，不在区域内就移动colorLayer的position到所点击的point上.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    CGPoint point = [[touches anyObject] locationInView:self.layerView];
     
+    if ([self.colorLayer.presentationLayer hitTest:point]) {
+        CGFloat red = arc4random() / (CGFloat)INT_MAX;
+        CGFloat green = arc4random() / (CGFloat)INT_MAX;
+        CGFloat blue = arc4random() / (CGFloat)INT_MAX;
+        self.colorLayer.backgroundColor = [UIColor colorWithRed:red
+                                                          green:green
+                                                           blue:blue
+                                                          alpha:1.0].CGColor;
+    } else {
+        [CATransaction begin];
+        [CATransaction setAnimationDuration:4.0];
+        self.colorLayer.position = point;
+        [CATransaction commit];
+    }
 }
+
+
 
 
 

@@ -56,13 +56,6 @@
                                     <action selector="enableImplicitAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="dkp-Ns-Bvb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giD-0p-Ri0">
-                                <rect key="frame" x="130" y="409" width="60" height="30"/>
-                                <state key="normal" title="推进过渡"/>
-                                <connections>
-                                    <action selector="pushTransitionAction:" destination="AA7-Gv-d3R" eventType="touchUpInside" id="c6I-Se-uKl"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWa-Wa-GG2">
                                 <rect key="frame" x="17" y="292" width="102" height="30"/>
                                 <state key="normal" title="添加colorLayer"/>
