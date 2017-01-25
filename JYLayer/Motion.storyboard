@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Transitions View Controller-->
+        <!--隐式动画-->
         <scene sceneID="TtB-gx-72T">
             <objects>
-                <viewController storyboardIdentifier="TransitionsViewController" id="AA7-Gv-d3R" customClass="TransitionsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImplicitAnimationsViewController" id="AA7-Gv-d3R" customClass="ImplicitAnimationsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6qW-jd-Bg2"/>
                         <viewControllerLayoutGuide type="bottom" id="bNO-7R-7TY"/>
@@ -87,7 +87,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="jce-Gp-KoT"/>
+                    <tabBarItem key="tabBarItem" title="隐式动画" image="heart" id="jce-Gp-KoT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="layerView" destination="oL2-tI-wug" id="hDf-Xj-Lcu"/>
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcz-Lh-U3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="826" y="378"/>
+            <point key="canvasLocation" x="849" y="-1035"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cmM-84-WIl">
@@ -109,11 +109,72 @@
                     </tabBar>
                     <connections>
                         <segue destination="AA7-Gv-d3R" kind="relationship" relationship="viewControllers" id="ao0-kK-bhT"/>
+                        <segue destination="FmC-ou-mJd" kind="relationship" relationship="viewControllers" id="922-SB-HL5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFs-AQ-dJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="408" y="378"/>
         </scene>
+        <!--隐式动画-->
+        <scene sceneID="0XL-H6-I1r">
+            <objects>
+                <viewController id="OQy-3V-GLS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wzM-iV-Sbw"/>
+                        <viewControllerLayoutGuide type="bottom" id="j9k-Eq-oXo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gC7-zK-yEb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="隐式动画" image="heart" id="l1B-D9-gbS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwM-Gl-VV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="1014"/>
+        </scene>
+        <!--显式动画-->
+        <scene sceneID="HlT-gA-iwB">
+            <objects>
+                <viewController storyboardIdentifier="ExplicitAnimationsViewController" id="FmC-ou-mJd" customClass="ExplicitAnimationsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aPt-Ia-u5f"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kpg-kX-Osp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YwK-LR-ZJS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qae-mp-ccF">
+                                <rect key="frame" x="60" y="69" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVS-PJ-Iw2">
+                                <rect key="frame" x="20" y="283" width="105" height="30"/>
+                                <state key="normal" title="设置图层背景色"/>
+                                <connections>
+                                    <action selector="changeColorUseBasicAnimation:" destination="FmC-ou-mJd" eventType="touchUpInside" id="a07-fP-0lX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="显式动画" image="duck" id="WD1-ih-FKA"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="layerView" destination="Qae-mp-ccF" id="DnY-ql-AtA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vVD-hy-4zB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="-408"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="duck" width="32" height="32"/>
+        <image name="heart" width="32" height="32"/>
+    </resources>
 </document>

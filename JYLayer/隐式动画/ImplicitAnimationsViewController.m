@@ -6,16 +6,16 @@
 //  Copyright © 2017年 China Industrial Bank. All rights reserved.
 //
 
-#import "TransitionsViewController.h"
+#import "ImplicitAnimationsViewController.h"
 #import "AppDelegate.h"
 
-@interface TransitionsViewController ()
+@interface ImplicitAnimationsViewController ()
 @property (weak, nonatomic) IBOutlet UIView *layerView;
 @property (nonatomic, strong) CALayer *colorLayer;
 
 @end
 
-@implementation TransitionsViewController
+@implementation ImplicitAnimationsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -74,17 +74,12 @@
 - (IBAction)changeColorAction:(id)sender {
     [self configColorLayer];
     
-    
-    CGFloat red = arc4random() / (CGFloat)INT_MAX;
-    CGFloat green = arc4random() / (CGFloat)INT_MAX;
-    CGFloat blue = arc4random() / (CGFloat)INT_MAX;
-    self.colorLayer.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0].CGColor;
+    self.colorLayer.backgroundColor = [UIColor randomColor].CGColor;
 }
 
 // 通过新建事务无副作用的修改动画时间
 - (IBAction)transitionChangeColorAction:(id)sender {
     [self configColorLayer];
-    
     
     [CATransaction begin];
     [CATransaction setAnimationDuration:1.0];
@@ -96,8 +91,6 @@
 // 设置动画完成块--选择90度
 - (IBAction)changeColorByAddCompleBlockAction:(id)sender {
     [self configColorLayer];
-    
-    
     
     [CATransaction begin];
     [CATransaction setAnimationDuration:1.0];
@@ -116,13 +109,7 @@
     [CATransaction begin];
     [CATransaction setAnimationDuration:2.0];
     
-    CGFloat red = arc4random() / (CGFloat)INT_MAX;
-    CGFloat green = arc4random() / (CGFloat)INT_MAX;
-    CGFloat blue = arc4random() / (CGFloat)INT_MAX;
-    self.layerView.layer.backgroundColor = [UIColor colorWithRed:red
-                                                           green:green
-                                                            blue:blue
-                                                           alpha:1.0].CGColor;
+    self.layerView.layer.backgroundColor = [UIColor randomColor].CGColor;
     
     [CATransaction commit];
 }
@@ -134,14 +121,7 @@
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:2.0];
     
-    CGFloat red = arc4random() / (CGFloat)INT_MAX;
-    CGFloat green = arc4random() / (CGFloat)INT_MAX;
-    CGFloat blue = arc4random() / (CGFloat)INT_MAX;
-    self.layerView.layer.backgroundColor = [UIColor colorWithRed:red
-                                                           green:green
-                                                            blue:blue
-                                                           alpha:1.0].CGColor;
-    
+    self.layerView.layer.backgroundColor = [UIColor randomColor].CGColor;
     
     NSLog(@"Inside:%@", [self.layerView actionForLayer:self.layerView.layer forKey:@"backgroundColor"]);
     
@@ -153,13 +133,7 @@
     CGPoint point = [[touches anyObject] locationInView:self.layerView];
     
     if ([self.colorLayer.presentationLayer hitTest:point]) {
-        CGFloat red = arc4random() / (CGFloat)INT_MAX;
-        CGFloat green = arc4random() / (CGFloat)INT_MAX;
-        CGFloat blue = arc4random() / (CGFloat)INT_MAX;
-        self.colorLayer.backgroundColor = [UIColor colorWithRed:red
-                                                          green:green
-                                                           blue:blue
-                                                          alpha:1.0].CGColor;
+        self.colorLayer.backgroundColor = [UIColor randomColor].CGColor;
     } else {
         [CATransaction begin];
         [CATransaction setAnimationDuration:4.0];
@@ -167,9 +141,5 @@
         [CATransaction commit];
     }
 }
-
-
-
-
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TransitionsViewController : UIViewController
+@interface ImplicitAnimationsViewController : UIViewController
 
 @end

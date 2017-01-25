@@ -1,0 +1,17 @@
+//
+//  JYLayer-Prefix.pch
+//  JYLayer
+//
+//  Created by Jolie_Yang on 2017/1/25.
+//  Copyright © 2017年 China Industrial Bank. All rights reserved.
+//
+
+#ifndef JYLayer_Prefix_pch
+#define JYLayer_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIColor+Utils.h"
+
+#endif /* JYLayer_Prefix_pch */

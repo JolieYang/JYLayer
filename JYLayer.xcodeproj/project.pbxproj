@@ -102,7 +102,9 @@
 		A0D23AD21E1375C600BEC8AE /* 3DTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D23AD11E1375C600BEC8AE /* 3DTransformViewController.m */; };
 		A0D348B71E359FF6001F5761 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D348B61E359FF6001F5761 /* HomeViewController.m */; };
 		A0D348B91E35A171001F5761 /* Motion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D348B81E35A171001F5761 /* Motion.storyboard */; };
-		A0D348BC1E35A1DC001F5761 /* TransitionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D348BB1E35A1DC001F5761 /* TransitionsViewController.m */; };
+		A0D348BC1E35A1DC001F5761 /* ImplicitAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D348BB1E35A1DC001F5761 /* ImplicitAnimationsViewController.m */; };
+		A0E69BB91E37409600327CD5 /* ExplicitAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E69BB81E37409600327CD5 /* ExplicitAnimationsViewController.m */; };
+		A0E69BBE1E38511400327CD5 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E69BBD1E38511400327CD5 /* UIColor+Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -227,8 +229,13 @@
 		A0D348B51E359FF6001F5761 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		A0D348B61E359FF6001F5761 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A0D348B81E35A171001F5761 /* Motion.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Motion.storyboard; sourceTree = "<group>"; };
-		A0D348BA1E35A1DC001F5761 /* TransitionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionsViewController.h; sourceTree = "<group>"; };
-		A0D348BB1E35A1DC001F5761 /* TransitionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionsViewController.m; sourceTree = "<group>"; };
+		A0D348BA1E35A1DC001F5761 /* ImplicitAnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImplicitAnimationsViewController.h; sourceTree = "<group>"; };
+		A0D348BB1E35A1DC001F5761 /* ImplicitAnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImplicitAnimationsViewController.m; sourceTree = "<group>"; };
+		A0E69BB71E37409600327CD5 /* ExplicitAnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplicitAnimationsViewController.h; sourceTree = "<group>"; };
+		A0E69BB81E37409600327CD5 /* ExplicitAnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplicitAnimationsViewController.m; sourceTree = "<group>"; };
+		A0E69BBC1E38511400327CD5 /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
+		A0E69BBD1E38511400327CD5 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
+		A0E69BBF1E38533F00327CD5 /* JYLayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JYLayer-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +268,7 @@
 		A008E6FF1DFFC43D00B6F6D6 /* JYLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A0E69BBA1E38507900327CD5 /* General */,
 				A0D348B51E359FF6001F5761 /* HomeViewController.h */,
 				A0D348B61E359FF6001F5761 /* HomeViewController.m */,
 				A008E7031DFFC43D00B6F6D6 /* AppDelegate.h */,
@@ -282,6 +290,7 @@
 				A008E70E1DFFC43D00B6F6D6 /* LaunchScreen.storyboard */,
 				A008E7111DFFC43D00B6F6D6 /* Info.plist */,
 				A008E7011DFFC43D00B6F6D6 /* main.m */,
+				A0E69BBF1E38533F00327CD5 /* JYLayer-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -473,6 +482,8 @@
 		A0D348B01E359D4F001F5761 /* 显式动画 */ = {
 			isa = PBXGroup;
 			children = (
+				A0E69BB71E37409600327CD5 /* ExplicitAnimationsViewController.h */,
+				A0E69BB81E37409600327CD5 /* ExplicitAnimationsViewController.m */,
 			);
 			path = "显式动画";
 			sourceTree = "<group>";
@@ -501,10 +512,27 @@
 		A0D348B41E359DD5001F5761 /* 隐式动画 */ = {
 			isa = PBXGroup;
 			children = (
-				A0D348BA1E35A1DC001F5761 /* TransitionsViewController.h */,
-				A0D348BB1E35A1DC001F5761 /* TransitionsViewController.m */,
+				A0D348BA1E35A1DC001F5761 /* ImplicitAnimationsViewController.h */,
+				A0D348BB1E35A1DC001F5761 /* ImplicitAnimationsViewController.m */,
 			);
 			path = "隐式动画";
+			sourceTree = "<group>";
+		};
+		A0E69BBA1E38507900327CD5 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A0E69BBB1E38507900327CD5 /* Categories */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		A0E69BBB1E38507900327CD5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A0E69BBC1E38511400327CD5 /* UIColor+Utils.h */,
+				A0E69BBD1E38511400327CD5 /* UIColor+Utils.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -651,15 +679,17 @@
 				A0D23AC61E1355DA00BEC8AE /* ContentViewController.m in Sources */,
 				A03779601E24CC03009D3DE6 /* LayerLabel.m in Sources */,
 				A03779571E233E50009D3DE6 /* CAShapeLayerViewController.m in Sources */,
+				A0E69BBE1E38511400327CD5 /* UIColor+Utils.m in Sources */,
 				A037795A1E238154009D3DE6 /* CustomBezierPathView.m in Sources */,
 				A0D23ACA1E1355FC00BEC8AE /* LayerGeometryViewController.m in Sources */,
 				A00EB9841E31B71C00AE62BC /* AVPlayerLayerViewController.m in Sources */,
 				A03779661E271A6A009D3DE6 /* CAGradientLayerViewController.m in Sources */,
 				A0D23AC01E13555E00BEC8AE /* MaskViewController.m in Sources */,
 				A008E7051DFFC43D00B6F6D6 /* AppDelegate.m in Sources */,
+				A0E69BB91E37409600327CD5 /* ExplicitAnimationsViewController.m in Sources */,
 				A037796F1E286FD7009D3DE6 /* LayerScrollView.m in Sources */,
 				A037796C1E2730BB009D3DE6 /* ReflectionView.m in Sources */,
-				A0D348BC1E35A1DC001F5761 /* TransitionsViewController.m in Sources */,
+				A0D348BC1E35A1DC001F5761 /* ImplicitAnimationsViewController.m in Sources */,
 				A037795D1E24BC47009D3DE6 /* CATextLayerViewController.m in Sources */,
 				A008E7021DFFC43D00B6F6D6 /* main.m in Sources */,
 				A037798A1E2C65D0009D3DE6 /* CATiledLayerViewController.m in Sources */,
@@ -782,6 +812,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JYLayer/JYLayer-Prefix.pch";
 				INFOPLIST_FILE = JYLayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cib.JYLayer;
@@ -793,6 +825,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JYLayer/JYLayer-Prefix.pch";
 				INFOPLIST_FILE = JYLayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cib.JYLayer;
