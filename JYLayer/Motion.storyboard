@@ -153,10 +153,31 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVS-PJ-Iw2">
-                                <rect key="frame" x="20" y="283" width="105" height="30"/>
-                                <state key="normal" title="设置图层背景色"/>
+                                <rect key="frame" x="13" y="283" width="120" height="30"/>
+                                <state key="normal" title="设置图层背景色v1"/>
                                 <connections>
                                     <action selector="changeColorUseBasicAnimation:" destination="FmC-ou-mJd" eventType="touchUpInside" id="a07-fP-0lX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhX-SE-2dW">
+                                <rect key="frame" x="147" y="283" width="122" height="30"/>
+                                <state key="normal" title="设置图层背景色v2"/>
+                                <connections>
+                                    <action selector="changeColorUseBasicAniamtionV2:" destination="FmC-ou-mJd" eventType="touchUpInside" id="NRI-5F-K1e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDw-VB-Gi1">
+                                <rect key="frame" x="12" y="315" width="123" height="30"/>
+                                <state key="normal" title="设置图层背景色v3"/>
+                                <connections>
+                                    <action selector="changeColorUseBasicAnimationV3:" destination="FmC-ou-mJd" eventType="touchUpInside" id="qjD-Ib-R3e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="km4-La-rCa">
+                                <rect key="frame" x="147" y="315" width="123" height="30"/>
+                                <state key="normal" title="设置图层背景色v4"/>
+                                <connections>
+                                    <action selector="changeColorUseBasicAnimationV4:" destination="FmC-ou-mJd" eventType="touchUpInside" id="wIj-Rs-3ZC"/>
                                 </connections>
                             </button>
                         </subviews>
