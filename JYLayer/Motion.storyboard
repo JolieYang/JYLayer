@@ -149,35 +149,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qae-mp-ccF">
-                                <rect key="frame" x="60" y="69" width="200" height="200"/>
+                                <rect key="frame" x="110" y="65" width="100" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVS-PJ-Iw2">
-                                <rect key="frame" x="13" y="283" width="120" height="30"/>
+                                <rect key="frame" x="21" y="185" width="120" height="30"/>
                                 <state key="normal" title="设置图层背景色v1"/>
                                 <connections>
                                     <action selector="changeColorUseBasicAnimation:" destination="FmC-ou-mJd" eventType="touchUpInside" id="a07-fP-0lX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhX-SE-2dW">
-                                <rect key="frame" x="147" y="283" width="122" height="30"/>
+                                <rect key="frame" x="155" y="185" width="122" height="30"/>
                                 <state key="normal" title="设置图层背景色v2"/>
                                 <connections>
                                     <action selector="changeColorUseBasicAniamtionV2:" destination="FmC-ou-mJd" eventType="touchUpInside" id="NRI-5F-K1e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDw-VB-Gi1">
-                                <rect key="frame" x="12" y="315" width="123" height="30"/>
+                                <rect key="frame" x="20" y="217" width="123" height="30"/>
                                 <state key="normal" title="设置图层背景色v3"/>
                                 <connections>
                                     <action selector="changeColorUseBasicAnimationV3:" destination="FmC-ou-mJd" eventType="touchUpInside" id="qjD-Ib-R3e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="km4-La-rCa">
-                                <rect key="frame" x="147" y="315" width="123" height="30"/>
+                                <rect key="frame" x="155" y="217" width="123" height="30"/>
                                 <state key="normal" title="设置图层背景色v4"/>
                                 <connections>
                                     <action selector="changeColorUseBasicAnimationV4:" destination="FmC-ou-mJd" eventType="touchUpInside" id="wIj-Rs-3ZC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pb3-nt-pLC">
+                                <rect key="frame" x="21" y="255" width="259" height="30"/>
+                                <state key="normal" title="CAKeyframeAnimation设置图层背景色"/>
+                                <connections>
+                                    <action selector="keyframeAnimationChangeColor:" destination="FmC-ou-mJd" eventType="touchUpInside" id="6zo-xM-i4f"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7y-Lg-dqM">
+                                <rect key="frame" x="21" y="293" width="280" height="160"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-6y-lLL">
+                                <rect key="frame" x="50" y="469" width="30" height="30"/>
+                                <state key="normal" title="飞船"/>
+                                <connections>
+                                    <action selector="shipAction:" destination="FmC-ou-mJd" eventType="touchUpInside" id="5gm-DF-1Dj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQL-HG-ISf">
+                                <rect key="frame" x="141" y="469" width="39" height="30"/>
+                                <state key="normal" title="飞船2"/>
+                                <connections>
+                                    <action selector="shipAction2:" destination="FmC-ou-mJd" eventType="touchUpInside" id="Ry7-0W-fau"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -186,6 +211,7 @@
                     <tabBarItem key="tabBarItem" title="显式动画" image="duck" id="WD1-ih-FKA"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="containerView" destination="h7y-Lg-dqM" id="R7G-BU-wyE"/>
                         <outlet property="layerView" destination="Qae-mp-ccF" id="DnY-ql-AtA"/>
                     </connections>
                 </viewController>

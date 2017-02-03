@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIView *layerView;
 @property (nonatomic, strong) CALayer *colorLayer;
 
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (nonatomic, strong) CALayer *shipLayer;
 @end
 
 @implementation ExplicitAnimationsViewController
@@ -27,9 +29,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)createPath {
+    
+}
+
 - (void)createColorLayer {
     self.colorLayer = [CALayer layer];
-    self.colorLayer.frame = CGRectMake(50, 50, 100, 100);
+    self.colorLayer.frame = CGRectMake(25, 25, 50, 50);
     self.colorLayer.backgroundColor = [UIColor blueColor].CGColor;
     [self.layerView.layer addSublayer:self.colorLayer];
 }
@@ -53,6 +59,7 @@
     self.colorLayer.backgroundColor = changedColor.CGColor;
     [self.colorLayer addAnimation:animation forKey:nil];
 }
+// 1.3
 - (IBAction)changeColorUseBasicAnimationV3:(id)sender {
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"backgroundColor";
@@ -64,6 +71,7 @@
     self.colorLayer.backgroundColor = changedColor.CGColor;
     [CATransaction commit];
 }
+// 1.4
 - (IBAction)changeColorUseBasicAnimationV4:(id)sender {
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"backgroundColor";
@@ -81,6 +89,77 @@
     [CATransaction commit];
     
     [layer addAnimation:animation forKey:nil];
+}
+
+- (IBAction)keyframeAnimationChangeColor:(id)sender {
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+    animation.keyPath = @"backgroundColor";
+    animation.duration = 2.0;
+    animation.values = @[
+                         (__bridge id)[UIColor blueColor].CGColor,
+                         (__bridge id)[UIColor redColor].CGColor,
+                         (__bridge id)[UIColor greenColor].CGColor,
+                         (__bridge id)[UIColor blueColor].CGColor];
+    [self.colorLayer addAnimation:animation forKey:nil];
+}
+
+- (IBAction)shipAction:(id)sender {
+    UIBezierPath *bezierPath = [[UIBezierPath alloc] init];
+    [bezierPath moveToPoint:CGPointMake(0, 100)];
+    [bezierPath addCurveToPoint:CGPointMake(250, 100) controlPoint1:CGPointMake(114, 0) controlPoint2:CGPointMake(174, 200)];
+    // draw the path using a CAShapeLayer
+    CAShapeLayer *pathLayer = [CAShapeLayer layer];
+    pathLayer.path = bezierPath.CGPath;
+    pathLayer.fillColor = [UIColor clearColor].CGColor;
+    pathLayer.strokeColor = [UIColor redColor].CGColor;
+    pathLayer.lineWidth = 3.0f;
+    [self.containerView.layer addSublayer:pathLayer];
+    // 添加飞船
+    if (!self.shipLayer) {
+        self.shipLayer = [CALayer layer];
+        _shipLayer.frame = CGRectMake(0, 0, 64, 64);
+        _shipLayer.position = CGPointMake(0, 100);
+        _shipLayer.contents= (__bridge id)[UIImage imageNamed:@"ship.png"].CGImage;
+        [self.containerView.layer addSublayer:_shipLayer];
+    }
+    // 创建关键帧动画
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+    animation.keyPath = @"position";
+    animation.duration = 4.0;
+    animation.path = bezierPath.CGPath;
+    [self.shipLayer addAnimation:animation forKey:nil];
+}
+// 飞船根据曲线的切线自动旋转
+- (IBAction)shipAction2:(id)sender {
+    if (!self.shipLayer) {
+        self.shipLayer = [CALayer layer];
+        _shipLayer.frame = CGRectMake(0, 0, 64, 64);
+        _shipLayer.position = CGPointMake(0, 100);
+        _shipLayer.contents= (__bridge id)[UIImage imageNamed:@"ship.png"].CGImage;
+        [self.containerView.layer addSublayer:_shipLayer];
+    }
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+    animation.keyPath = @"position";
+    animation.duration = 4.0;
+    animation.path = [self bezierPath].CGPath;
+    // 根据曲线的切线自动旋转
+    animation.rotationMode = kCAAnimationRotateAuto;
+    [self.shipLayer addAnimation:animation forKey:nil];
+}
+- (UIBezierPath *)bezierPath {
+    UIBezierPath *bezierPath = [[UIBezierPath alloc] init];
+    [bezierPath moveToPoint:CGPointMake(0, 100)];
+    [bezierPath addCurveToPoint:CGPointMake(250, 100) controlPoint1:CGPointMake(114, 0) controlPoint2:CGPointMake(174, 200)];
+    return bezierPath;
+}
+
+// 2. 动画完成后修改图层的颜色
+#pragma mark CAAnimationDelegate
+- (void)animationDidStop:(CABasicAnimation *)anim finished:(BOOL)flag {
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
+    self.colorLayer.backgroundColor = (__bridge CGColorRef)anim.toValue;
+    [CATransaction commit];
 }
 
 
