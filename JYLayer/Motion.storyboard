@@ -192,17 +192,38 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-6y-lLL">
-                                <rect key="frame" x="50" y="469" width="30" height="30"/>
+                                <rect key="frame" x="21" y="469" width="30" height="30"/>
                                 <state key="normal" title="飞船"/>
                                 <connections>
                                     <action selector="shipAction:" destination="FmC-ou-mJd" eventType="touchUpInside" id="5gm-DF-1Dj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQL-HG-ISf">
-                                <rect key="frame" x="141" y="469" width="39" height="30"/>
+                                <rect key="frame" x="62" y="469" width="39" height="30"/>
                                 <state key="normal" title="飞船2"/>
                                 <connections>
                                     <action selector="shipAction2:" destination="FmC-ou-mJd" eventType="touchUpInside" id="Ry7-0W-fau"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duz-7d-Smp">
+                                <rect key="frame" x="110" y="469" width="40" height="30"/>
+                                <state key="normal" title="飞船3"/>
+                                <connections>
+                                    <action selector="shipAction3:" destination="FmC-ou-mJd" eventType="touchUpInside" id="Uqc-6p-CtB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOd-28-hdU">
+                                <rect key="frame" x="158" y="469" width="40" height="30"/>
+                                <state key="normal" title="飞船4"/>
+                                <connections>
+                                    <action selector="shipAction4:" destination="FmC-ou-mJd" eventType="touchUpInside" id="aCr-1b-vYq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-SV-Xnp">
+                                <rect key="frame" x="206" y="469" width="40" height="30"/>
+                                <state key="normal" title="飞船5"/>
+                                <connections>
+                                    <action selector="shipAction5:" destination="FmC-ou-mJd" eventType="touchUpInside" id="RfR-Da-vz3"/>
                                 </connections>
                             </button>
                         </subviews>

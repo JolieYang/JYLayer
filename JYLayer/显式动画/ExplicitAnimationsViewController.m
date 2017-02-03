@@ -152,6 +152,55 @@
     [bezierPath addCurveToPoint:CGPointMake(250, 100) controlPoint1:CGPointMake(114, 0) controlPoint2:CGPointMake(174, 200)];
     return bezierPath;
 }
+// 用transform属性对图层做动画 -- 逆时针旋转180度,无法
+- (IBAction)shipAction3:(id)sender {
+    if (!self.shipLayer) {
+        self.shipLayer = [CALayer layer];
+        _shipLayer.frame = CGRectMake(0, 0, 64, 64);
+        _shipLayer.position = CGPointMake(0, 100);
+        _shipLayer.contents= (__bridge id)[UIImage imageNamed:@"ship.png"].CGImage;
+        [self.containerView.layer addSublayer:_shipLayer];
+    }
+    // 飞船旋转动画
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"transform";
+    animation.duration = 2.0;
+    animation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 0, 1)];
+    [self.shipLayer addAnimation:animation forKey:nil];
+}
+// M_PI_2 顺时针旋转90度; M_PI+M_PI_4 逆时针旋转M_PI-M_PI_$;
+- (IBAction)shipAction4:(id)sender {
+    if (!self.shipLayer) {
+        self.shipLayer = [CALayer layer];
+        _shipLayer.frame = CGRectMake(0, 0, 64, 64);
+        _shipLayer.position = CGPointMake(0, 100);
+        _shipLayer.contents= (__bridge id)[UIImage imageNamed:@"ship.png"].CGImage;
+        [self.containerView.layer addSublayer:_shipLayer];
+    }
+    // 飞船旋转动画
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"transform";
+    animation.duration = 2.0;
+    animation.byValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 0, 1)];
+    [self.shipLayer addAnimation:animation forKey:nil];
+}
+
+// 对transform.rotation关键路径应用动画--顺时针旋转360度
+- (IBAction)shipAction5:(id)sender {
+    if (!self.shipLayer) {
+        self.shipLayer = [CALayer layer];
+        _shipLayer.frame = CGRectMake(0, 0, 64, 64);
+        _shipLayer.position = CGPointMake(0, 100);
+        _shipLayer.contents= (__bridge id)[UIImage imageNamed:@"ship.png"].CGImage;
+        [self.containerView.layer addSublayer:_shipLayer];
+    }
+    // 飞船旋转动画
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"transform.rotation";
+    animation.duration = 2.0;
+    animation.byValue = @(M_PI);
+    [self.shipLayer addAnimation:animation forKey:nil];
+}
 
 // 2. 动画完成后修改图层的颜色
 #pragma mark CAAnimationDelegate
